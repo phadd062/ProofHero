@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ProofHero</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/stepbar.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+
+						<!-- Logo -->
+							<div class="logo">
+								<a href="index.html"><strong>ProofHero</strong></a>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="search.html">Search for Editors</a></li>
+									<li><a href="track.html">Track Document</a></li>
+									<li><a href="rate.html">Rate Editor</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+								</ul>
+							</nav>
+
+					</header>
+
+				<!-- Section -->
+					<section id="one" class="main alt">
+						<header class="accent1">
+							<h1>Instructions</h1>
+							<p>Get an Instant Quote and Place Your Order</p>
+						</header>
+						<div class="inner alt">
+							<div class="content">
+								<ol class="stepBar step4">
+									<li class="step">UPLOAD</li>
+									<li class="step current">INSTRUCTIONS</li>
+									<li class="step">CHECKOUT</li>
+									<li class="step">CONFIRMATION</li>
+								</ol><br>
+
+							<form method="post" action="checkout.html">
+								<div class="row gtr-uniform">
+									<div class="col-4 col-12-small">
+										<h4><strong style="color: red;">*</strong> Enter a title for your order</h4>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="text" placeholder="Title" required="required"/>
+									</div>
+									<br>
+									<div class="col-4 col-12-small">
+										<h4><strong style="color: red;">*</strong> Do you want us to edit or proofread your bibliography/references?</h4>
+									</div>
+									<div class="col-4 col-12-small">
+										<select name="demo-category" id="demo-category" required="required">
+											<option value="">Select from:</option>
+											<option value="1">Yes</option>
+											<option value="1">No</option>
+										</select>
+									</div>
+									<br>
+									<div class="col-4 col-12-small">
+										<h4><strong style="color: red;">*</strong> Do you want us to edit or proofread your endnotes and/or footnotes?</h4>
+									</div>
+									<div class="col-4 col-12-small">
+										<select name="demo-category" id="demo-category" required="required">
+											<option value="">Select from:</option>
+											<option value="1">Yes</option>
+											<option value="1">No</option>
+										</select>
+									</div>
+									<br>
+									<div class="col-4 col-12-small">
+										<h4><strong style="color: red;">*</strong> Which style guide would you like us to check your document against?</h4>
+									</div>
+									<div class="col-4 col-12-small">
+										<select name="demo-category" id="demo-category" required="required">
+											<option value="">Select from:</option>
+											<option value="1">I don't know; please just make it consistent</option>
+											<option value="1">I don't need references checked</option>
+											<option value="1">Harvard</option>
+											<option value="1">IEEE</option>
+										</select>
+									</div>
+									<br>
+									<div class="col-4 col-12-small">
+										<h4>Enter Instructions (Optional)</h4>
+									</div>
+									<div class="col-4 col-12-small">
+										<textarea name="demo-message" id="demo-message" placeholder="Instructions" rows="3"></textarea>
+									</div>
+									<br>
+									<div class="col-4 col-12-small">
+										<h4>Editor code (Optional)</h4>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="text" placeholder="It will look like EM###" />
+									</div>
+									<div class="col-12">
+										<h4>Your document has 718 Words, when would you like it delivered?</h4>
+									</div>
+									<div class="col-12">
+										<input type="radio" id="demo-priority-low" name="demo-priority">
+										<label for="demo-priority-low"> 718 Words completed within 48 hours for CAD$ 20</label>
+									</div>
+									<div class="col-12">
+										<input type="radio" id="demo-priority-normal" name="demo-priority" checked>
+										<label for="demo-priority-normal"> 718 Words completed within 24 hours for CAD$ 25</label>
+									</div>
+									<div class="col-12">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high"> 718 Words completed within 12 hours for CAD$ 35</label>
+									</div>
+									<div class="col-12">
+										<input type="radio" id="demo-priority-extreme" name="demo-priority">
+										<label for="demo-priority-extreme"> 718 Words completed within 6 hours for CAD$ 50</label>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><a href="start.html" class="button">Back</a></li>
+											<li><input type="reset" value="Reset" /></li>
+											<li><input type="submit" id="submit" disabled="disabled" value="Next" class="primary" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+							<script>
+							var submitButton = document.getElementById("submit");
+							document.addEventListener("DOMContentLoaded", function() {
+							    $(submit).prop("disabled", false);
+							    $("#contact_form").submit(function() {
+							        $(submit).prop("disabled", true);
+							    });
+							});
+							window.addEventListener("pageshow", function() {
+							    submit.disabled = false;
+							});
+							</script>
+							</div>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.selectorr.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

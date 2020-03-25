@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ProofHero</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/stepbar.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+
+						<!-- Logo -->
+							<div class="logo">
+								<a href="index.html"><strong>ProofHero</strong></a>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="search.html">Search for Editors</a></li>
+									<li><a href="track.html">Track Document</a></li>
+									<li><a href="rate.html">Rate Editor</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+								</ul>
+							</nav>
+
+					</header>
+
+				<!-- Section -->
+					<section id="one" class="main alt">
+						<header class="accent1">
+							<h1>Get Started</h1>
+							<p>Get an Instant Quote and Place Your Order</p>
+						</header>
+						<div class="inner alt">
+							<div class="content">
+								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+								<ol class="stepBar step4">
+									<li class="step current">UPLOAD</li>
+									<li class="step">INSTRUCTIONS</li>
+									<li class="step">CHECKOUT</li>
+									<li class="step">CONFIRMATION</li>
+								</ol><br>
+
+							<form method="post" action="instructions.html">
+								<div class="row gtr-uniform">
+									<div class="col-4 col-12-small">
+										<h3>Upload Document</h3>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="file" required="required"/>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" id="submit" disabled="disabled" value="Get Started" class="primary" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+							<script>
+							var submitButton = document.getElementById("submit");
+							document.addEventListener("DOMContentLoaded", function() {
+							    $(submit).prop("disabled", false);
+							    $("#contact_form").submit(function() {
+							        $(submit).prop("disabled", true);
+							    });
+							});
+							window.addEventListener("pageshow", function() {
+							    submit.disabled = false;
+							});
+							</script>
+							</div>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.selectorr.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

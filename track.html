@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ProofHero</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/stepbar.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+
+						<!-- Logo -->
+							<div class="logo">
+								<a href="index.html"><strong>ProofHero</strong></a>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="search.html">Search for Editors</a></li>
+									<li class="current"><a href="track.html">Track Document</a></li>
+									<li><a href="rate.html">Rate Editor</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+								</ul>
+							</nav>
+
+					</header>
+
+				<!-- Section -->
+					<section id="one" class="main alt">
+						<header class="accent1">
+							<h1>Track your document</h1>
+							<p>Below you will be able to track your document</p>
+						</header>
+						<div class="inner alt">
+							<div class="content">
+							<span class="image main"><img src="images/track.jpg" alt="" /></span>
+							<form method="post" action="order.html">
+								<div class="row gtr-uniform">
+									<div class="col-4 col-12-small">
+										<h4><strong style="color: red;">*</strong> Enter your Last Name</h4>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="text" placeholder="Last Name" required="required"/>
+									</div>
+									<br>
+									<div class="col-4 col-12-small">
+										<h4><strong style="color: red;">*</strong> Enter your Order Number</h4>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="text" placeholder="H100-D7G6-K876-ABCC" required="required"/>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" id="submit" disabled="disabled" value="Track your document" class="primary" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+							<script>
+							var submitButton = document.getElementById("submit");
+							document.addEventListener("DOMContentLoaded", function() {
+							    $(submit).prop("disabled", false);
+							    $("#contact_form").submit(function() {
+							        $(submit).prop("disabled", true);
+							    });
+							});
+							window.addEventListener("pageshow", function() {
+							    submit.disabled = false;
+							});
+							</script>
+							</div>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.selectorr.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
