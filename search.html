@@ -42,20 +42,42 @@
 						</header>
 						<div class="inner alt">
 							<div class="content">
-								<ul class="actions">
-									<li><a class="button primary" onclick="myFunction()">Popular Editors</a></li>
-									<li><a class="button" onclick="myFunction2()">English Editors</a></li>
-									<li><a class="button" onclick="myFunction3()">French Editors</a></li>
-									<li><a class="button" onclick="myFunction4()">Bilingual Editors</a></li>
-									<li><a class="button" onclick="myFunction5()">IT Editors</a></li>
-								</ul>
+								<form action="results.html">
+									<div class="row gtr-uniform">
+										<div class="col-9 col-12-small">
+											<input type="text" placeholder="Search" required="required" />
+										</div>
+										<div class="col-3 col-12-small">
+											<input type="submit" value="Search" class="fit" />
+										</div>
+									</div>
+								</form>
+								<script>
+								var submitButton = document.getElementById("submit");
+								document.addEventListener("DOMContentLoaded", function() {
+								    $(submit).prop("disabled", false);
+								    $("#contact_form").submit(function() {
+								        $(submit).prop("disabled", true);
+								    });
+								});
+								window.addEventListener("pageshow", function() {
+								    submit.disabled = false;
+								});
+								</script>
 								<h1 style="text-align: center;" id="myDIV">Popular Editors</h1>
 								<h1 style="text-align: center; display: none;" id="myDIV2">English Editors</h1>
 								<h1 style="text-align: center; display: none;" id="myDIV3">French Editors</h1>
 								<h1 style="text-align: center; display: none;" id="myDIV4">Bilingual Editors</h1>
 								<h1 style="text-align: center; display: none;" id="myDIV5">IT Editors</h1>
+								<ul class="actions">
+									<li><a class="button" onclick="myFunction()">Popular Editors</a></li>
+									<li><a class="button" onclick="myFunction2()">English Editors</a></li>
+									<li><a class="button" onclick="myFunction3()">French Editors</a></li>
+									<li><a class="button" onclick="myFunction4()">Bilingual Editors</a></li>
+									<li><a class="button" onclick="myFunction5()">IT Editors</a></li>
+								</ul>
 								<div id="myDIV6">
-								<p>Tony B. - ID: ED1001</p>
+								<p>Tony G. - ID: ED1001</p>
 								<p><span class="image left"><img src="images/editor.png" alt="" /></span>Tony has an outstanding record as a critical evaluator of proposals, research and manuscripts. After having acquired a B.A. in English Literature from the University of Waterloo, Tony has extensive experience in the industry in which he has addressed accuracy, consistency, and appropriateness of materials, including researching, writing, editing, proofreading, and posting web content. Tony’s research interest includes historical and cultural studies and history of science.</p>
 								<br><br></div>
 								<div style="display: none;" id="myDIV7">
